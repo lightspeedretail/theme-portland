@@ -1,3 +1,4 @@
+
 <div id="wishlistdisplay" class="span12">
     <div class="row-fluid">
         <div class="span6">

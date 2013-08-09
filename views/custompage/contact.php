@@ -1,4 +1,4 @@
-<div id="contact-page">
+<div id="contact-page" class="row-fluid">
 <h1><?php echo Yii::t('tabs',$model->title) ?></h1>
 
 <div class="span12">
@@ -93,7 +93,7 @@
 			'imageUrl' => '$data->Link',
 			'emptyText'=>'',
 			'titleText' => '$data->title',
-			'captionText' => '$data->title."<br>"._xls_currency($data->sell)',
+			'captionText' => '$data->title."<br>"._xls_currency($data->Price)',
 			'target' => 'do-not-delete-this',
 			'wrap' => 'circular',
 			'visible' => true,
