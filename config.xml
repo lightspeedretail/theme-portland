@@ -1,0 +1,22 @@
+<config>
+    <viewset>cities</viewset>
+    <name>Portland</name>
+    <thumbnail>portland.png</thumbnail>
+    <version>1.0.0</version>
+    <description>Minimal Clean Template</description>
+    <credit>Designed by LightSpeed</credit>
+    <subthemes>
+        <subtheme>
+            <name>Light</name>
+            <css>light</css>
+        </subtheme>
+        <subtheme>
+            <name>Dark</name>
+            <css>dark</css>
+        </subtheme>
+        <subtheme>
+            <name>Colorless</name>
+            <css>colorless</css>
+        </subtheme>
+    </subthemes>
+</config>
