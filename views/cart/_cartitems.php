@@ -50,6 +50,8 @@
                 <td><?= _xls_currency($model->subtotal); ?></td>
             </tr>
 
+            <?php echo $this->renderPartial('/cart/_carttaxes',array('model'=>$model),true); ?>
+
             <tr>
                 <td></td>
                 <td></td>
