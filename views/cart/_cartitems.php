@@ -47,7 +47,7 @@
                 <td></td>
                 <td></td>
                 <td><?= Yii::t('cart','Subtotal'); ?></td>
-                <td><?= _xls_currency($model->subtotal); ?></td>
+                <td><span id="cartSubtotal"><?= _xls_currency($model->subtotal); ?></span></td>
             </tr>
 
             <?php echo $this->renderPartial('/cart/_carttaxes',array('model'=>$model),true); ?>
@@ -56,14 +56,14 @@
                 <td></td>
                 <td></td>
                 <td><?= Yii::t('cart',"Shipping"); ?></td>
-                <td><?= _xls_currency($model->shipping_sell); ?></td>
+                <td><span id="cartShipping"><?= _xls_currency($model->shipping_sell); ?></span></td>
             </tr> 
 
             <tr>
                 <td></td>
                 <td></td>
                 <td><?= Yii::t('cart',"Total"); ?></td>
-                <td><?= _xls_currency($model->total); ?></td>
+                <td><span id="cartTotal"><?= _xls_currency($model->total); ?></span></td>
             </tr>
 
 
