@@ -18,10 +18,10 @@
 
 	<link rel="Shortcut Icon" href="<?=Yii::app()->baseUrl."/images/favicon.ico" ?>" type="image/x-icon"/>
 
-	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->baseUrl.'/css/base.css'); ?>
-	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/style.css'); ?>
-	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/portland.css'); ?>
-	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/'._xls_get_conf('CHILD_THEME').'.css'); ?>
-	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl.'/css/custom.css'); ?>
+	<?php foreach(Yii::app()->theme->info->cssfiles as $cssfile)
+		Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->cssUrl($cssfile)); ?>
+	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->cssUrl(Yii::app()->theme->config->CHILD_THEME)); ?>
+	<?php Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->cssUrl('custom')); ?>
+
 	<?php echo $this->renderPartial("/site/_google",null,true); ?>
 </head>
