@@ -194,6 +194,8 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
     width: 128px;
 }
 
+.search_advanced.iphone {display: none; }
+
 #xlsSearch { margin-top: 2px; }
 
 .shoppingcartholder { position:relative; }
@@ -873,6 +875,13 @@ li.page.selected {
 }
 
 @media (max-width: 767px) { /*iPad vertical and below */
+    #searchentry [class*="span"] {
+        -moz-box-sizing: border-box;
+        display: block;
+        float: left;
+        margin-left: 0;
+        width: 50%;
+    }
     #menubar {
         width: 100%;
         height: auto;
@@ -898,7 +907,17 @@ li.page.selected {
         border: 0;
     }
     #searchentry {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+    }
+    .search_advanced.iphone {
+        display: block;
+        padding-bottom: 20px;
+        text-align: right;
+
+    }
+    .search_advanced a {
+        font-size: 0.8em;
+        text-align: right;
     }
     .logo {
         top: 0;
