@@ -8,9 +8,7 @@
 	<div class="span4 loginDiv">
 		<div id="login">
 			<?php if(Yii::app()->user->isGuest): ?>
-				<?php echo CHtml::ajaxLink(Yii::t('global','	Login'),array('site/login'),
-					array('onClick'=>'js:jQuery($("#LoginForm")).dialog("open")'),
-					array('id'=>'btnLogin')); ?>
+				<?php echo CHtml::link(Yii::t('global', 'Login'), array("site/login")); ?>
 				&nbsp;/&nbsp;
 				<a href="<?= _xls_site_url('myaccount/edit'); ?>"><?php echo Yii::t('global', 'Register'); ?></a>
 			<?php else: ?>
@@ -20,14 +18,7 @@
 		</div>
 		<?php if(_xls_get_conf('ENABLE_WISH_LIST',0)): ?>
 			<div class="wishlists">
-				<?php 
-					if(Yii::app()->user->isGuest) {
-						echo CHtml::link(Yii::t('global', 'Wish Lists'), array("wishlist/search"));					
-					}
-					else {
-						echo CHtml::link(Yii::t('global', 'Wish Lists'), array("/wishlist"));
-					}
-				?>
+				<?php echo CHtml::link(Yii::t('global', 'Wish Lists'), array("/wishlist")); ?>
 			</div>
 		<?php endif; ?>
 		<div id="checkoutlink" class="wishlists shoppingcartholder">

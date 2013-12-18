@@ -5,6 +5,9 @@ a, a:visited {
     outline: 0;
     font-weight: normal;
 }
+.errorMessage { color: #dd0000; }
+
+input[type="button"], input[type="submit"], button, input#btnSubmit, input#checkoutSubmitButton, #btnSendWishList { margin-top:10px;}
 
 input::-webkit-input-placeholder { /* WebKit browsers */
     color:    #515151;
@@ -64,6 +67,8 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 	background-color: transparent;
 	color: #515151;
 }
+
+#wishlistsearch { margin-top: 25px; }
 
 .wishlists { 
     margin-left: 15px; 
