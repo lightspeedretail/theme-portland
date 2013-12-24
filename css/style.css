@@ -128,6 +128,7 @@ a:hover {  text-decoration: none;   }
 #searchentry .search_box input { width: 142px; height: 16px; font-size: 1.0em;  border: 0px; border-collapse: collapse; margin-bottom: 4px; -webkit-appearance:textfield; text-transform: none; }
 #searchentry .searchTextBox .searched {  }
 #searchentry .search_advanced img { padding-left: 32px; padding-top: 6px;}
+#searchentry .search_advanced_text { display:none}
 
 #advancedsearch #AdvancedSearchForm_intCategory { width: auto;}
 
@@ -379,6 +380,7 @@ a:hover {  text-decoration: none;   }
     .products_slider_theme .leftpadding { padding-left: 0px; }
     .products_slider, .products_slider_theme { display: none; }
     #footer .addresshours { height: 160px; }
+    #searchentry .search_advanced_text {  display: block;}
 }
 
 

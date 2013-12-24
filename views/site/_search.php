@@ -41,6 +41,6 @@
 </div>
 <div class="span1 right">
 	<span class="search_advanced right"><a href="<?php echo _xls_site_url('/search'); ?>"><img class="spyglass" src="<?= Yii::app()->theme->baseUrl; ?>/css/images/adv_search.png"></a></span>
-	<span class="search_advanced right"><a href="<?php echo _xls_site_url('/search'); ?>"><?php echo Yii::t('global','Advanced Search'); ?></a></span>
+	<span class="search_advanced_text right"><a href="<?php echo _xls_site_url('/search'); ?>"><?php echo Yii::t('global','Advanced Search'); ?></a></span>
 </div>
 <br clear="both">
