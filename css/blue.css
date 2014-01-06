@@ -7,4 +7,5 @@
 }
 .subpage-header {
     background:  url('images/blue/headershort.jpg') no-repeat top left;
+    background-position: 0 -80px;
 }
