@@ -88,21 +88,25 @@
 				            'id'=>'addToCart',
 				            'onClick'=>CHtml::ajax(array(
 					            'url'=>array('cart/AddToCart'),
-					            //If we are viewing a matrix product, Add To Cart needs to pass selected options, otherwise just our model id
-					            'data'=>($model->IsMaster ?
-						            'js:{"'.'product_size'.'": $("#SelectSize option:selected").val(),
+						            'data'=>($model->IsMaster ?
+								            'js:{"'.'product_size'.'": $("#SelectSize option:selected").val(),
 							            "'.'product_color'.'": $("#SelectColor option:selected").val(),
 							            "'.'id'.'": '.$model->id.',
+							            "'.'cart'.'": "_topcart",
 							            "'.'qty'.'": $("#'.CHtml::activeId($model,'intQty').'").val() }'
-						            : array('id'=>$model->id,'qty'=>'js:$("#'.CHtml::activeId($model,'intQty').'").val()')),
+								            : array('id'=>$model->id,
+									            'cart'=>'_topcart',
+									            'qty'=>'js:$("#'.CHtml::activeId($model,'intQty').'").val()')),
 					            'type'=>'POST',
 					            'dataType'=>'json',
-					            'success' => 'js:function(data){
+						            'beforeSend'=>'function(){animateAddToCart("#checkoutlink");}',
+						            'success' => 'js:function(data){
 				                    if (data.action=="alert") {
 				                      alert(data.errormsg);
 									} else if (data.action=="success") {
-										'.(_xls_get_conf('AFTER_ADD_CART') ?'window.location.href="'.$this->createUrl("/cart").'"' : 'location.reload()').'
-
+										'.(_xls_get_conf('AFTER_ADD_CART') ?
+								            'window.location.href="'.$this->createUrl("/cart").'"' :
+								            '$("#checkoutlink").html(data.shoppingcart);').'
 									}}'
 				            )),
 			            ),CHtml::link(Yii::t('product', 'Add to Cart'), '#'));

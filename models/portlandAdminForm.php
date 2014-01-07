@@ -19,7 +19,7 @@ class portlandAdminForm extends ThemeForm
 	protected $parent; //Used when a theme is a copy of another theme to control inheritance
 	protected $bootstrap = null;
 	protected $viewset = "cities";
-	protected $cssfiles = "base,style,portland";
+	protected $cssfiles = "style,portland";
 
 	/*
 	 * IMAGE SIZES
@@ -60,7 +60,7 @@ class portlandAdminForm extends ThemeForm
 
 	public $menuposition = "left";
 	public $column2file = "column2";
-
+	public $animateAddToCart=true;
 
 	/**
 	 * Declares the validation rules.
@@ -69,6 +69,7 @@ class portlandAdminForm extends ThemeForm
 	{
 		return array(
 			array('CHILD_THEME','required'),
+			array('animateAddToCart','safe'),
 		);
 	}
 
@@ -82,6 +83,7 @@ class portlandAdminForm extends ThemeForm
 	{
 		return array(
 			'CHILD_THEME'=>ucfirst(_xls_regionalize('color')).' set',
+			'animateAddToCart'=>'Add To Cart animation',
 		);
 	}
 
@@ -101,6 +103,11 @@ class portlandAdminForm extends ThemeForm
 				'CHILD_THEME'=>array(
 					'type'=>'dropdownlist',
 					'items'=>array('green'=>'Green', 'blue'=>'Blue'),
+				),
+
+				'animateAddToCart'=>array(
+					'type'=>'dropdownlist',
+					'items'=>array(true=>'On', false=>'Off'),
 				),
 
 

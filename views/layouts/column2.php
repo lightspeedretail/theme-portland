@@ -27,12 +27,6 @@
 <script>
 	$(document).ready(function() {
 
-		$("#checkoutlink > a").click(function(e){
-			e.preventDefault();
-			$("#shoppingcart").toggleClass("shoppingcarthidden");
-		})
-
-
 		//add class to register menu div
 		$('#login').parent().addClass('loginDiv');
 		//menu positioning

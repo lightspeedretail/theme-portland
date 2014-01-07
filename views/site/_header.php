@@ -22,8 +22,7 @@
 			</div>
 		<?php endif; ?>
 		<div id="checkoutlink" class="wishlists shoppingcartholder">
-			<?php echo CHtml::link(Yii::t('cart','n==1#Cart ({n})|n>1#Cart ({n})',Yii::app()->shoppingcart->totalItemCount), array('cart/index')) ?>
-			<?= $this->renderPartial('/site/_sidecart',null, true); ?>
+			<?= $this->renderPartial('/site/_topcart',null, true); ?>
 		</div>
 		<?php if(_xls_get_conf('LANG_MENU',0)): ?>
 			<div id="langmenu">
