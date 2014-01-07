@@ -99,11 +99,11 @@
 									            'qty'=>'js:$("#'.CHtml::activeId($model,'intQty').'").val()')),
 					            'type'=>'POST',
 					            'dataType'=>'json',
-						            'beforeSend'=>'function(){animateAddToCart("#checkoutlink");}',
 						            'success' => 'js:function(data){
 				                    if (data.action=="alert") {
 				                      alert(data.errormsg);
 									} else if (data.action=="success") {
+										animateAddToCart("#checkoutlink")
 										'.(_xls_get_conf('AFTER_ADD_CART') ?
 								            'window.location.href="'.$this->createUrl("/cart").'"' :
 								            '$("#checkoutlink").html(data.shoppingcart);').'
