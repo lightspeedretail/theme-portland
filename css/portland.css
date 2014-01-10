@@ -89,6 +89,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
     margin-right: 0;
     width:100%;
 	overflow: hidden;
+	background-size:cover !important;
 }
 
 #menubar {
@@ -126,7 +127,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 #nav_products .dropspace .arrow { float: right; margin: 3px 7px 0 3px; }
 #nav_products .dropspace { width:196px; }
-#nav_products .dropspace li { width:196px; }
+#nav_products .dropspace li { width:196px; border-top: 1px white dotted; }
 #nav_products .dropspace li a,
 #nav_products .dropspace li a:hover,
 #nav_products .dropspace li a:active { background-color: rgba(58, 61, 68, 1); width:180px; }
@@ -159,7 +160,6 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 .productstab, 
 .nav_menuheader {
 	color: white !important;
-	font-size: 120% !important;
     text-transform: none;
 }
 
@@ -642,12 +642,15 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 #nav_products {
     height: 35px;
 }
+
+
 #nav_products ul li ul li a {
 	background: transparent;
 }
 #nav_products ul li ul li a:hover {
 	background: transparent;
 }
+
 #nav_products .dropspace {
 	margin-top: 0px !important;
     padding-top: 17px;
@@ -775,6 +778,7 @@ li.page.selected {
     font-weight: normal;
     margin: auto;
 }
+
 #LoginForm {
     margin-bottom: 0px;
     background: white!important;
@@ -807,7 +811,7 @@ li.page.selected {
 }
 @media (max-width: 1921px) {
 	#nav_products .dropspace a{
-		font-size: 90% !important;
+		font-size: 100% !important;
 	}
 }
 @media (min-width: 1921px) {
@@ -815,7 +819,7 @@ li.page.selected {
 		top: 240px;
 	}
 	.dropspace a {
-		font-size: 50% !important;
+		font-size: 100% !important;
 	}
 }
 @media (min-width: 2200px) {
@@ -833,7 +837,7 @@ li.page.selected {
 		font-size: 70% !important;
 	}
 	.nav_menuheader {
-		margin-left: -30%;
+		
 	}
 }
 @media (max-width: 1200px) {

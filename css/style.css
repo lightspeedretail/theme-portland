@@ -47,6 +47,7 @@ a:hover {  text-decoration: none;   }
 #headerimage { padding-bottom: 30px; overflow: hidden;}
 #viewport { clear: both; }
 #langdrop select { font-size: 0.7em; height: 33px;}
+.subpage-header{background-size:cover;}
 
 /***** Login/Logout button *****/
 #login, #login a {  height: 24px; padding-top: 12px; padding-bottom: 10px; text-align: center; margin-bottom: 10px; text-decoration: none; text-transform: uppercase; cursor: pointer; }
