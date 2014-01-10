@@ -762,6 +762,8 @@ li.page.selected {
     max-width: 250px;
 }
 
+.rememberMe label[for="CustomerAddress_residential"] { vertical-align: bottom; }
+
 #btnModalLogin {
     color: white;
     max-width: 190px;
