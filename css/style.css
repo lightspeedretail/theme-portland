@@ -134,8 +134,8 @@ a:hover {  text-decoration: none;   }
 #advancedsearch #AdvancedSearchForm_intCategory { width: auto;}
 
 /***** Mini Cart (right side shopping cart) *****/
-#shoppingcart { text-transform: uppercase; padding-left: 4px; padding-right: 4px;  clear:both;}
-#shoppingcarttop .title a { font-size: 1.1em; height: auto; min-height: 220px; width: 100%; z-index: 500; padding-top: 10px; padding-bottom: 10px; }
+#shoppingcart { text-transform: uppercase; padding-left: 4px; padding-right: 4px;  clear:both; z-index: 500;}
+#shoppingcarttop .title a { font-size: 1.1em; height: auto; min-height: 220px; width: 100%; padding-top: 10px; padding-bottom: 10px; }
 #shoppingcarttop .carticon { float: right; background: url(images/shoppingcartlight.png) no-repeat top right; height: 26px; width: 26px; line-height: 16px; }
 #shoppingcarttop .minicart_itemlist { margin-top: 15px; margin-bottom: 5px; }
 #shoppingcarttop .minicart_item { padding-top: 15px; padding-bottom: 25px; border-top: 1px dotted #bbbbbb;  height: 30px; line-height: 1em; clear: both;}
