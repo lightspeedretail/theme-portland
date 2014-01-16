@@ -792,17 +792,22 @@ li.page.selected {
     color: white;
 }
 
+@media (min-width: 1600px) {
+    #wishlistdisplay { max-width: 700px; }
+}
+
 @media (max-width: 1600px) {
 	#headerimagebg {
 		margin-top: 0%;
 	}
+    #wishlistdisplay { max-width: 700px; }
 }
 
 @media (max-width: 1200px) {
 	#headerimage {
 		margin-top: 3%;
 	}
-
+    #wishlistdisplay { max-width: 700px; }
 	#footer .bottomtabs{
 		top: -72px;
 	}
@@ -855,7 +860,7 @@ li.page.selected {
      }
     #product, #viewport form, #gridheader {
         margin-left: 0px;
-        max-width: 100%;
+        /*max-width: 100%;*/
         position: relative;
         left: 0;
         margin-left: 0;
@@ -877,6 +882,8 @@ li.page.selected {
     #footer .addresshours {
         height: 160px;
     }
+
+    #wishlistdisplay { max-width: 700px; }
 
 }
 
