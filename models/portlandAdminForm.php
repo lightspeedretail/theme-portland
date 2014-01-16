@@ -31,8 +31,8 @@ class portlandAdminForm extends ThemeForm
 	protected $LISTING_IMAGE_WIDTH = 400;
 	protected $MINI_IMAGE_HEIGHT = 100;
 	protected $MINI_IMAGE_WIDTH = 100;
-	protected $PREVIEW_IMAGE_HEIGHT = 128;
-	protected $PREVIEW_IMAGE_WIDTH = 128;
+	protected $PREVIEW_IMAGE_HEIGHT = 45;
+	protected $PREVIEW_IMAGE_WIDTH = 45;
 	protected $SLIDER_IMAGE_HEIGHT = 256;
 	protected $SLIDER_IMAGE_WIDTH = 256;
 
