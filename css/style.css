@@ -231,7 +231,7 @@ a:hover {  text-decoration: none;   }
   /* tweaks for specific fields. They all have IDs so it makes it easy */
 #checkout label[for=CheckoutForm_receiveNewsletter], #checkout label[for=CheckoutForm_billingSameAsShipping],
 #checkout label[for=CheckoutForm_acceptTerms],#checkout label[for=CustomerAddress_active] ,
-#checkout label[for=CustomerAddress_residential], #checkout label[for=Customer_newsletter_subscribe] { display: inline;}
+#checkout label[for=CustomerAddress_residential], #checkout label[for=Customer_newsletter_subscribe] { display: inline; vertical-align: bottom; }
 .rememberMe label { display: inline;}
 #checkout #CheckoutForm_billingState, #checkout #CustomerAddress_state { width: 100px;}
 #checkout #CheckoutForm_billingPostal, #checkout #CustomerAddress_postal { width: 135px; }

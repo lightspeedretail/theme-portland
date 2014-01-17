@@ -583,6 +583,8 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 	padding: 10px 20px 10px 20px;
 }
 
+.registerDiv h1 { padding-bottom: 25px; }
+
 .shoppingcartitems {
     height: 191px;
     overflow: auto;
@@ -793,21 +795,21 @@ li.page.selected {
 }
 
 @media (min-width: 1600px) {
-    #wishlistdisplay { max-width: 700px; }
+    #wishlistdisplay, #myaccount { max-width: 700px; }
 }
 
 @media (max-width: 1600px) {
 	#headerimagebg {
 		margin-top: 0%;
 	}
-    #wishlistdisplay { max-width: 700px; }
+    #wishlistdisplay, #myaccount { max-width: 700px; }
 }
 
 @media (max-width: 1200px) {
 	#headerimage {
 		margin-top: 3%;
 	}
-    #wishlistdisplay { max-width: 700px; }
+    #wishlistdisplay, #myaccount { max-width: 700px; }
 	#footer .bottomtabs{
 		top: -72px;
 	}
@@ -849,6 +851,7 @@ li.page.selected {
     #menubar {
         width: 80%;
     }
+    #myaccount { max-width: 700px; }
 }
 
 @media (max-width: 980px) { /*iPad vertical and below */
@@ -883,7 +886,7 @@ li.page.selected {
         height: 160px;
     }
 
-    #wishlistdisplay { max-width: 700px; }
+    #wishlistdisplay, #myaccount { max-width: 700px; }
 
 }
 
